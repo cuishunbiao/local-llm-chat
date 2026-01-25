@@ -181,7 +181,7 @@ export default function Home() {
               <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mb-2">
                 <Bot className="w-6 h-6 text-foreground" />
               </div>
-              <h2 className="text-xl font-medium">DeepSeek-R1</h2>
+              <h2 className="text-xl font-medium">Qwen3:14b</h2>
             </div>
           ) : (
             // 消息列表
@@ -286,7 +286,7 @@ export default function Home() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="给 DeepSeek 发送消息..."
+            placeholder="给 Qwen3 发送消息..."
             className="block w-full bg-transparent border-none focus:ring-0 resize-none max-h-[200px] min-h-[52px] py-4 pl-5 pr-12 text-sm outline-none"
             rows={1}
             disabled={isLoading}
