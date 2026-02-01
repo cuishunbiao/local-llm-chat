@@ -20,7 +20,7 @@ import { NextRequest } from "next/server";
 /** Ollama 服务地址（本地运行） */
 const OLLAMA_URL = "http://localhost:11434/api/chat";
 
-/** 默认使用的模型（qwen3:14b 支持思考过程输出） */
+/** 默认使用的模型（Qwen3:14b 支持思考过程输出） */
 const MODEL = "qwen3:14b";
 
 // ============================================================================
@@ -38,6 +38,7 @@ interface ChatRequest {
   messages: Message[];
   model?: string;
 }
+
 
 // ============================================================================
 // Next.js 配置
